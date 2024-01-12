@@ -2,12 +2,14 @@
 
 > **声明**: 本项目（包括此README文件）90%的内容都是由ChatGPT-4生成的，感谢OpenAI改变世界。
 
-这个项目提供了两个Python脚本，用于管理GitHub上的仓库。第一个脚本用于列出用户的所有公开仓库，第二个脚本用于批量删除用户指定的仓库。
+这个项目提供了4个Python脚本，用于管理GitHub上的仓库。以下是各个脚本的功能描述：
 
 ## 功能
 
 - `list_public_repos.py`: 列出您在GitHub上的所有公开仓库。
 - `delete_specified_repos.py`: 批量删除您指定的仓库。
+- `list_star_repos.py`: 列出您在GitHub上star过的所有仓库，包括每个仓库的描述和star时间。
+- `unstar_specified_repos.py`: 批量取消对指定仓库的star。
 
 ## 安装
 
@@ -44,6 +46,17 @@ pip install requests
    - 运行`delete_specified_repos.py`。例如：`python delete_specified_repos.py`。
    - 按照提示输入您的GitHub个人访问令牌。
    - 脚本将删除列表中指定的仓库。
+
+3. **列出所有star过的仓库**:
+   - 运行`list_star_repos.py`。例如：`python list_star_repos.py`。
+   - 按照提示输入您的GitHub用户名和个人访问令牌。
+   - 脚本将列出您star过的所有仓库，包括每个仓库的描述和star时间。
+
+4. **取消star指定仓库**:
+   - 在`unstar_specified_repos.py`中指定您想要取消star的仓库列表。
+   - 运行`unstar_specified_repos.py`。例如：`python unstar_specified_repos.py`。
+   - 按照提示输入您的GitHub个人访问令牌。
+   - 脚本将取消列表中指定仓库的star。
 
 ## 注意事项
 
